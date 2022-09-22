@@ -86,6 +86,7 @@ img {
 }
 .text-bold{
     font-weight: 500;
+    color: #000;
 }
 .text-muted{
     color: var(--gray-color);
@@ -99,7 +100,7 @@ img {
     right: 0;
     left: 0;
     position: fixed;
-    display: none;
+    /* display: none; */
 }
 .modal{
     background: #fff;
@@ -112,6 +113,9 @@ img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%)
+}
+.modal-container.show-modal{
+    display: block;
 }
 .modal-header{
     background: var(--primary2-color);
@@ -164,9 +168,74 @@ img {
     border-color: var(--primary2-color);
 }
 
+/* notification popup */
+.notification-popup{
+    background-color: #fff;
+    position: fixed;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-sd);
+    width: 300px;
+    max-width: 100%;
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+    /* transform: translateX( calc(-100% - 40px)); */
+    transition: 0.5s ease-in-out;
+    z-index: 5;
+    /* animation: slideInOut 10s ease-in-out infinite; */
+}
+@keyframes slideInOut {
+    0%,
+    45%,
+    100%{
+        transform: translateX( calc(-100% - 40px));
+        opacity: 0;
+        visibility: hidden;
+    }
+    50%,
+    95%{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.notification-popup.closed {
+    display: none;
+}
 
 
-
+.notification-popup #notifi-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--gray-color);
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.notification-toast{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px ;
+    padding: 25px;
+}
+.notifi-img{
+    width: 50%;
+    border: 1px solid rgb(202, 195, 195);
+    padding: 5px;
+}
+.notifi-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: 0.5s ease;
+}
+.notifi-img:hover{
+    transform: scale(0.9);
+}
 
 
 
