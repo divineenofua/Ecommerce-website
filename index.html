@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="live.css">
     <title>E-Commerce Web</title>
 </head>
 <body>
 <div id="preloader"></div>
+
+
+
+    
 
 
 <!-- modal -->
@@ -48,7 +56,7 @@
     </div>
 </div>
 <!-- notification popup -->
-<div class="notification-popup" id="notification">
+<div class="notification-popup closed" id="notification">
     <button id="notifi-close"><i class="uil uil-times"></i></button>
     <div class="notification-toast">
         <div class="notifi-img">
@@ -65,18 +73,107 @@
 
 
 
-<!-- 
-<nav>
+
+<header>
+    <div class="header-top">
     <div class="container">
         <div class="icons">
-
+       <ul class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+       </ul>
         </div>
-        <div class="nav-text text-muted">
+        <div class="header-text text-muted">
             <p>Free Shipping this week order over -$55</p>
         </div>
-        .
+        <div class="lang">
+            <select name="usd" id="usd">                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NGN">NGN</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="USD" selected>USD$</option>
+                <option value="UYU">UYU</option>
+                <option value="VND">VND</option>
+                <option value="ZAR">ZAR</option>
+</select>
+<select name="lang" id="lang">
+    <option value="fre">French</option>
+    <option value="Eng" selected>English</option>
+    <option value="espag">Espagnol</option>
+</select>
+        </div>
     </div>
-</nav> -->
+</div>
+<div class="header-main">
+    <div class="container">
+        <a href="#" class="header-logo">
+            <img src="assets/images/logo/logo.svg" height="36" width="120" alt="Dee's logo">
+        </a>
+        <div class="input">
+            <input type="text" placeholder="Enter your product name..">
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+        <div class="icons-link">
+            <button class="action-btn"><a href="#" class="fas fa-person"></a>
+            </button>
+            <button class="action-btn"><a href="#" class="uil uil-heart"></a>
+                <span class="count">0</span>
+            </button>
+            <button class="action-btn"><a href="#" class="fas fa-shopping-cart"></a> 
+                <span class="count">0</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+</header>
 
 
 

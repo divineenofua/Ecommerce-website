@@ -13,7 +13,7 @@
     --primary-color:hsl(var(--primary-color-hue), 75%, 60%);
     --primary1-color:hsl(52, 75%, 60%);
     --primary2-color:hsl(202, 75%, 60%);
-    --secondary-color:hsl(252, 100%, 90%);
+    --secondary-color:hsl(240, 6%, 93%);
     --success-color:hsl(120, 43%, 48%);
     --danger-color:hsl(0, 95%, 65%);
     --dark-color:hsl(252, 30%, var(--dark-color-lightness));
@@ -29,6 +29,11 @@
     --sticky-top-left:86.4px;
     --sticky-top-right:-288px;
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
 
     }
 *{
@@ -60,14 +65,17 @@ img {
 }
 /* general styling */
 .container{
-    width: 80%;
+    width:var(--container-width-lg);
     margin:0 auto;
 }
 .icons{
     cursor: pointer;
     font-size: 24px;
 }
-
+button{
+    border: none;
+    background: none;
+}
 
 .btn{
     display: inline-block;
@@ -100,7 +108,7 @@ img {
     right: 0;
     left: 0;
     position: fixed;
-    /* display: none; */
+    display: none;
 }
 .modal{
     background: #fff;
@@ -179,10 +187,10 @@ img {
     bottom: 80px;
     left: 20px;
     right: 20px;
-    /* transform: translateX( calc(-100% - 40px)); */
+    transform: translateX( calc(-100% - 40px));
     transition: 0.5s ease-in-out;
     z-index: 5;
-    /* animation: slideInOut 10s ease-in-out infinite; */
+    animation: slideInOut 10s ease-in-out infinite;
 }
 @keyframes slideInOut {
     0%,
@@ -238,11 +246,69 @@ img {
 }
 
 
+/* HEADER STYLING */
+.container .icons .social-links a{
+    background:rgba(231, 227, 227, 0.3) ;
+    padding: 5px;
+    border-radius: 4px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 10px 50px;
+    border-bottom: 1px solid var(--secondary-color);
+    z-index: 100;
+    font-size: 14px;
+}
+.lang select{
+    border: none;
+    color: var(--gray-color);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.container .header-text{
+    text-transform: uppercase;
+}
 
+/* header main */
+.header-main .container{
+    padding: 30px;
+    height: 80px;
+}
+.container .input{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid var(--secondary-color);
+    width: 40%;
+    padding: 7px;
+    border-radius: 5px;
+    color: var(--gray-color);
+}
+.input input{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
 
+}
+.action-btn{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+}
 
-
-
+.count{
+    position: absolute;
+    background-color: var(--danger-color);
+    width: fit-content;
+    color: #fff;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
 
 
 
@@ -266,4 +332,15 @@ img {
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+
+
+@media (max-width:900px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    .container .icons{
+        display: none;
+    }
 }
