@@ -252,7 +252,8 @@ button{
     padding: 5px;
     border-radius: 4px;
 }
-header .container{
+header .header-top .container,
+header .header-main .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -272,6 +273,9 @@ header .container{
 .container .header-text{
     text-transform: uppercase;
 }
+
+
+
 
 /* header main */
 .header-main .container{
@@ -299,18 +303,26 @@ header .container{
     font-size: 25px;
     color: #fff;
 }
+.action-btn a{
+    color: var(--gray-color);
+}
 
 .count{
     position: absolute;
-    background-color: var(--danger-color);
-    width: fit-content;
     color: #fff;
-    border-radius: 50%;
-    top: 0;
-    right: 0;
+    background-color: var(--danger-color);
+    font-size: 11.2px;
+    color: var(--white);
+    width: fit-content;
+    border-radius: 12.8px;
+    padding: 1.6px 6.4px;
+    top: -3.2px;
+    right: -4.8px;
 }
 
-
+.mobile-bottom-nav .action-btn i{
+    background-color: aquamarine;
+}
 
 
 
