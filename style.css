@@ -4,6 +4,9 @@
     --poppins: "Poppins" sans-serif;
     --white: hsl(252, 30%, var(--white-color-lightness));
     --black: black;
+    --blackish:rgb(73, 72, 72);
+    --sonic-silver:hsl(0, 0%, 47%);
+    --spanish-gray:hsl(0, 0%, 60%);
     --primary-color-hue: 252;
     --dark-color-lightness:17%;
     --light-color-lightness:95%;
@@ -148,6 +151,13 @@ input{
     border: 3px solid var(--white);
     border-radius: 20px;
 }
+.has-scrollbar:hover::-webkit-scrollbar-thumb{
+    background: hsl(0, 0%, 90%);
+}
+.has-scrollbar::-webkit-scrollbar:hover{
+    background: hsl(0, 0%, 80%);
+}
+
 
 
 
@@ -359,6 +369,39 @@ header .header-main .container{
 }
 
 */
+/* Header styling */
+.header-top, .desktop-navigation-menu,
+.icons-link{
+    display: none;
+}
+.header-main{
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gray-color);
+}
+.input input{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+
+}
+.input{
+    margin-top: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid var(--secondary-color);
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    color: var(--gray-color);
+}
+
+.header-logo .img{
+    margin: auto;
+}
+.fa-search:hover{
+    color: var(--primary2-color);
+}
 .action-btn{
     position: relative;
     font-size: 20px;
@@ -416,14 +459,97 @@ header .header-main .container{
     visibility: visible;
 }
 
-
-
-
-
-
-
-
-
+.menu-top{
+    padding-bottom:15px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid var(--gray-color);
+}
+.menu-top .menu-title{
+    color:var(--primary2-color);
+    font-size:var(--fs-4);
+    font-weight:600;
+}
+.menu-close-btn{
+    color: var(--gray-color);
+}
+.menu-close-btn .uil-times{
+    font-size: 20px;
+    stroke-width: 50px;
+}
+.mobile-menu-category-list{
+    margin-bottom: 30px;
+}
+.menu-category .accord-menu{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-menu-category-list .menu-category{
+    border-bottom: 1px solid var(--gray-color);
+    padding: 10px 0;
+}
+.mobile-menu-category-list .menu-title{
+    color: var(--blackish);
+    font-size:var(--fs-6);
+    font-weight:500;
+    padding: 12px 0;
+}
+.accord-menu > div {
+    font-size: 14px;
+}
+.accord-menu .uil{
+    color: var(--blackish);
+    stroke-width: 100px;
+}
+.accord-menu.active .uil-plus,
+.accord-menu .uil-minus{
+    display: none;
+}
+.accord-menu .uil-plus,
+.accord-menu.active .uil-minus{
+    display: block;
+}
+.menu-category .submenu-category-list{
+    margin-left: 10px;
+}
+.submenu-title{
+    padding: 6px 0;
+    font-size: var(--fs-6);
+    color: var(--sonic-silver);
+    font-weight:300;
+}
+.submenu-title:hover{
+    color: var(--spanish-gray);
+}
+.submenu-category-list{
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+.submenu-category-list.active{
+    max-height: 148px;
+    visibility: visible;
+}
+.menu-bottom .menu-category-list{
+    margin-bottom: 20px;
+}
+.menu-bottom .menu-category{
+    border-bottom: none;
+}
+.menu-bottom .menu-title {
+    font-size: var(--fs-6);
+    font-weight: 500;
+    color: var(--blackish);
+    padding: 12px 0;
+}
+.accord-menu.active img {
+    transform: rotate(360deg);
+}
 
 
 
@@ -439,35 +565,3 @@ header .header-main .container{
         display: none;
     }
 }
-    .header-top, .desktop-navigation-menu,
-    .icons-link{
-        display: none;
-    }
-    .header-main{
-        padding: 20px 0;
-        border-bottom: 1px solid var(--gray-color);
-    }
-    .input input{
-        border: none;
-        background-color: transparent;
-        font-size: 14px;
-    
-    }
-    .input{
-        margin-top: 40px;
-        background-color: transparent;
-        display: flex;
-        justify-content: space-between;
-        border:1px solid var(--secondary-color);
-        width: 100%;
-        padding: 7px;
-        border-radius: 5px;
-        color: var(--gray-color);
-    }
-
-    .header-logo .img{
-        margin: auto;
-    }
-    .fa-search:hover{
-        color: var(--primary2-color);
-    }
