@@ -7,6 +7,7 @@
     --blackish:rgb(73, 72, 72);
     --sonic-silver:hsl(0, 0%, 47%);
     --spanish-gray:hsl(0, 0%, 60%);
+    --light-gray:rgb(233, 230, 230);
     --primary-color-hue: 252;
     --dark-color-lightness:17%;
     --light-color-lightness:95%;
@@ -523,7 +524,7 @@ header .header-main .container{
     font-weight:300;
 }
 .submenu-title:hover{
-    color: var(--spanish-gray);
+    color: rgb(201, 194, 194);
 }
 .submenu-category-list{
     max-height: 0;
@@ -547,10 +548,35 @@ header .header-main .container{
     color: var(--blackish);
     padding: 12px 0;
 }
-.accord-menu.active img {
-    transform: rotate(360deg);
+.accord-menu.active .fa {
+    transform: rotate(-0.25turn);
 }
-
+.menu-bottom .submenu-category-list{
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-left: 0;
+    box-shadow:  0 0 10px hsla(0, 0%, 0%, 0.05);
+}
+.menu-category .submenu-category-list .submenu-category{
+    padding: 5px 0;
+}
+.menu-bottom .submenu-category:not(:last-child){
+    border-bottom: 1px solid  var(--gray-color);
+}
+.menu-social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-social-container .social-links{
+    background:rgb(233, 230, 230);
+    color: var(--blackish);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 13px;
+}
 
 
 
