@@ -366,8 +366,6 @@
     </button>
     <button class="action-btn">
         <i class="uil uil-home"></i>
-
-        <span class="count">0</span>
     </button>
     <button class="action-btn">
         <i class="uil uil-heart"></i>
@@ -378,7 +376,7 @@
         <i class="uil uil-grid"></i>
     </button>
 </div>
-<nav class="mobile-nav-menu has-scrollbar active" id="data-mobile-menu">
+<nav class="mobile-nav-menu has-scrollbar" id="data-mobile-menu">
     <div class="menu-top">
         <h2 class="menu-title">Menu</h2>
         <button class="menu-close-btn" id="data-menu-close-btn">
@@ -390,12 +388,11 @@
         <li class="menu-category">
             <a href="" class="menu-title">Home</a>
         </li>
-        <li class="menu-category">
+        <li class="menu-category show-menu" >
             <button class="accord-menu" id="accord-menu">
                 <p class="menu-title">Men's</p>
-                <div>
+                <div class="list-icon">
                     <i id="plus" class="uil uil-plus"></i>
-                    <i id="minus" class="uil uil-minus"></i>
                 </div>
             </button>
             <ul class="submenu-category-list" id="data-accord">
@@ -415,12 +412,11 @@
             </ul>
         </li>
 
-        <li class="menu-category">
+        <li class="menu-category show-menu">
             <button class="accord-menu" id="accord-menu">
                 <p class="menu-title">Women's</p>
-                <div>
-                    <i class="uil uil-plus"></i>
-                    <i class="uil uil-minus"></i>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
                 </div>
             </button>
             <ul class="submenu-category-list" id="data-accord">
@@ -439,12 +435,11 @@
 
             </ul>
         </li>
-        <li class="menu-category">
+        <li class="menu-category show-menu">
             <button class="accord-menu" id="accord-menu">
                 <p class="menu-title">Shoes</p>
-                <div>
-                    <i class="uil uil-plus"></i>
-                    <i class="uil uil-minus"></i>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
                 </div>
             </button>
             <ul class="submenu-category-list" id="data-accord">
@@ -463,12 +458,11 @@
 
             </ul>
         </li>
-        <li class="menu-category">
+        <li class="menu-category show-menu">
             <button class="accord-menu" id="accord-menu">
                 <p class="menu-title">Jewelery</p>
-                <div>
-                    <i class="uil uil-plus"></i>
-                    <i class="uil uil-minus"></i>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
                 </div>
             </button>
             <ul class="submenu-category-list" id="data-accord">
@@ -487,12 +481,11 @@
 
             </ul>
         </li>
-        <li class="menu-category">
+        <li class="menu-category show-menu">
             <button class="accord-menu" id="accord-menu">
                 <p class="menu-title">Toiletries</p>
-                <div>
-                    <i class="uil uil-plus"></i>
-                    <i class="uil uil-minus"></i>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
                 </div>
             </button>
             <ul class="submenu-category-list" id="data-accord">
@@ -511,12 +504,11 @@
 
             </ul>
         </li>
-        <li class="menu-category">
+        <li class="menu-category show-menu">
             <button class="accord-menu" id="accord-menu">
                 <p class="menu-title">Electronics</p>
-                <div>
-                    <i class="uil uil-plus"></i>
-                    <i class="uil uil-minus"></i>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
                 </div>
             </button>
             <ul class="submenu-category-list" id="data-accord">
@@ -544,7 +536,7 @@
     </ul>
     <div class="menu-bottom">
         <ul class="menu-category-list">
-            <li class="menu-category">
+            <li class="menu-category show-menu">
                 <button class="accord-menu" id="data-accord-btn">
                     <p class="menu-title">Language</p>
                     <i class="fa fa-chevron-left"></i>
@@ -561,7 +553,7 @@
                     </li>
                 </ul>
             </li>
-                <li class="menu-category">
+                <li class="menu-category show-menu">
                     <button class="accord-menu" id="data-accord-btn">
                         <p class="menu-title">Currency</p>
                         <i class="fa fa-chevron-left"></i>
@@ -582,10 +574,6 @@
                     <li class="submenu-category">
                         <a href="#" class="submenu-title">MYR</a>
                     </li>
-                    <li class="submenu-category">
-                        <a href="#" class="submenu-title">ARS</a>
-                    </li>
-                    
                 </ul>
                 
             </li>
@@ -609,7 +597,80 @@
 </nav>
 </header>
 
+<main>
+    <!-- BANNER -->
+<div class="banner">
+    <div class="container">
+        <div class="slider-container has-scrollbar">
+            <div class="slider-item">
+                <img src="assets/images/blog-2.jpg" alt="latest fashion sale" class="banner-img">
+                <div class="banner-content">
+                    <p class="banner-subtitle">Trending item</p>
+                    <h2 class="banner-title">women's Latest fashion sale</h2>
+                    <p class="banner-text">
+                        Starting at &dollar;<b>20</b>.00
+                    </p>
+                    <a href="#" class="banner-btn">Shop now</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="assets/images/banner-3.jpg" alt="latest fashion sale" class="banner-img image">
+                <div class="banner-content">
+                    <p class="banner-subtitle">Trending item</p>
+                    <h2 class="banner-title">women's Latest fashion sale</h2>
+                    <p class="banner-text">
+                        Starting at &dollar;<b>20</b>.00
+                    </p>
+                    <a href="#" class="banner-btn">Shop now</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="assets/images/blog-4.jpg" alt="latest fashion sale" class="banner-img ">
+                <div class="banner-content">
+                    <p class="banner-subtitle">Trending item</p>
+                    <h2 class="banner-title">women's Latest fashion sale</h2>
+                    <p class="banner-text">
+                        Starting at &dollar;<b>20</b>.00
+                    </p>
+                    <a href="#" class="banner-btn">Shop now</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="assets/images/banner-1.jpg" alt="latest fashion sale" class="banner-img image">
+                <div class="banner-content">
+                    <p class="banner-subtitle">Trending item</p>
+                    <h2 class="banner-title">women's Latest fashion sale</h2>
+                    <p class="banner-text">
+                        Starting at &dollar;<b>20</b>.00
+                    </p>
+                    <a href="#" class="banner-btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<!-- CATEGORY -->
+<div class="category">
+    <div class="container">
+        <div class="category-item-container has-scroll">
+            <div class="category-item">
+                <div class="category-img-box">
+                    <img src="assets/images/icons/dress.svg" width="30" alt="dress & frock">
+                </div>
+                <div class="category-content-box">
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & frocks</h3>
+                        <p class="category-item-amount">(53)</p>
+                        <a href="#" class="category-btn">Show All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
 
 
  

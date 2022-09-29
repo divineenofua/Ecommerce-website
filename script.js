@@ -27,24 +27,40 @@ closeNotification.addEventListener("click", () => {
 	notificationPopUp.classList.add('closed');
 });
 
-// moobile menu
-const showList =document.getElementById("plus");
+// mobile menu
+const showList =document.querySelectorAll("#plus");
 const HideList =document.getElementById("minus");
-const subMenu = document.getElementById("data-accord");
 const accordMenu = document.getElementById('accord-menu');
 const closeMenu = document.getElementById("close");
+const accordBtn = document.getElementById("data-accord-btn");
 // close nav
 const mobileMenu = document.getElementById("data-mobile-menu");
 closeMenu.addEventListener("click", () => {
 	mobileMenu.classList.remove("active");
 });
-// show & hide list
-showList.addEventListener("click", () => {
-	subMenu.classList.add("active");
-	accordMenu.classList.add("active");
-});
-HideList.addEventListener("click", () => {
-	subMenu.classList.remove("active");
-	accordMenu.classList.remove("active");
+// show & hide menu list
+const menuShowList = document.querySelectorAll('.show-menu');
+menuShowList.forEach(faq => {
+    faq.addEventListener('click', () => {
+         faq.classList.toggle('active');
 
+        //  change icon
+        const icon = faq.querySelector('.list-icon i');
+        if(icon.className === 'uil uil-plus') {
+           icon.className = "uil uil-minus";
+         } else{
+            icon.className = "uil uil-plus";
+         }
+		 
+
+    })
+})
+
+// open mobile menu
+const mobileMenuOpen = document.getElementById("mobile-menu-open");
+const mobileNavMenu = document.getElementById("data-mobile-menu");
+mobileMenuOpen.addEventListener("click", () => {
+	mobileNavMenu.classList.add("active");
 });
+
+
