@@ -69,6 +69,7 @@ body {
     font-family: var(--poppins);
     color: #000;
     background-color: #fff;
+    padding-bottom: 60px;
 }
 html{
     overscroll-behavior: contain;
@@ -149,14 +150,14 @@ input{
 }
 .has-scrollbar::-webkit-scrollbar-thumb{
     background: transparent;
-    border: 3px solid var(--white);
+    border: 1px solid var(--white);
     border-radius: 20px;
 }
 .has-scrollbar:hover::-webkit-scrollbar-thumb{
     background: hsl(0, 0%, 90%);
 }
 .has-scrollbar::-webkit-scrollbar:hover{
-    background: hsl(0, 0%, 80%);
+    background: hsl(0, 30%, 96%);
 }
 
 
@@ -586,6 +587,7 @@ header .header-main .container{
     align-items: center;
     gap: 10px;
     border-radius: var(--border-radius-sd);
+    margin-bottom: 0;
     overflow: auto hidden;
     scroll-snap-type: inline mandatory;
     overscroll-behavior-inline: contain;
@@ -601,6 +603,7 @@ header .header-main .container{
 .slider-item .banner-img{
     width: 100%;
     height: 100%;
+    border-radius: var(--border-radius-sd);
     object-fit: cover;
     object-position: center;
 }
@@ -649,6 +652,75 @@ header .header-main .container{
 .banner-btn:hover {
     background: var(--blackish);
 }
+
+.category{
+    margin-bottom: 30px;
+}
+
+.category-item-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: auto hidden;
+    scroll-snap-type: inline mandatory ;
+    overscroll-behavior-inline:contain;
+}
+.category-item {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+    scroll-snap-align: start;
+}
+
+.category-img-box{
+    background-color: var(--light-gray);
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.category-content-box{width: 100%;}
+.category-content-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.category-item-title{
+    color: var(--blackish);
+    font-size: var(--fs-9);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.category-item-amount{
+    color: var(--sonic-silver);
+    font-size: var(--fs-10);
+}
+.category-btn{
+    color: var(--primary2-color);
+    font-size: var(8);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* sidebr styling */
+.sidebar-title{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:900px) {
     .container{
