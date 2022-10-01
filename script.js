@@ -8,16 +8,7 @@ const modalShow = document.getElementById("modal");
 const modalCloseBtn = document.getElementById('times');
 const openModal =document.getElementById("open-modal");
 
-// MODAL EVENT LISTENERS
-// openModal.addEventListener("click", () => {
-// 	modalShow.classList.add('show-modal');
-// })
-// modalCloseBtn.addEventListener("click", () => {
-// 	modalShow.classList.remove('show-modal');
-// })
-// modalCloseBtn.addEventListener('click', () => {
-// 	modal.style.display = "none";
-//  });
+
 
 // notification popup
 const notificationPopUp = document.getElementById("notification");
@@ -58,9 +49,35 @@ menuShowList.forEach(faq => {
 
 // open mobile menu
 const mobileMenuOpen = document.getElementById("mobile-menu-open");
-const mobileNavMenu = document.getElementById("data-mobile-menu");
 mobileMenuOpen.addEventListener("click", () => {
-	mobileNavMenu.classList.add("active");
+	mobileMenu.classList.add("active");
 });
 
 
+// open category
+const mobileMenuSideBar = document.querySelector('.sidebar')
+const categoryOpen = document.getElementById('grid');
+categoryOpen.addEventListener('click', () => {
+   mobileMenuSideBar.classList.add('active');
+});
+const closeSideBar = document.getElementById("close-sidebar");
+closeSideBar.addEventListener("click", () => {
+	mobileMenuSideBar.classList.remove("active");
+});
+
+
+// sidebar
+const sideMenuBar = document.querySelectorAll(".sidebar-menu-category");
+sideMenuBar.forEach(item => {
+   item.addEventListener('click', () =>{
+      item.classList.toggle('active');
+
+      const icon = item.querySelector('.icon-list i');
+     if(icon.className === 'uil uil-plus'){
+      icon.className = 'uil uil-minus';
+     }else{
+      icon.className = 'uil uil-plus';
+     }
+
+   })
+})

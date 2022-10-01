@@ -373,7 +373,7 @@
         <span class="count">0</span>
     </button>
     <button class="action-btn">
-        <i class="uil uil-grid"></i>
+        <i id="grid" class="uil uil-grid"></i>
     </button>
 </div>
 <nav class="mobile-nav-menu has-scrollbar" id="data-mobile-menu">
@@ -782,16 +782,16 @@
 <div class="product-container">
     <div class="container">
         <!-- SIDEBAR -->
-        <div class="sidebar has-scroll-bar" id="data-mobile-menu">
+        <div class="sidebar  has-scrollbar">
             <div class="sidebar-category">
                 <div class="sidebar-top">
                     <h3 class="sidebar-title">Category</h3>
                     <button class="sidebar-close-btn" id="data-mobile-menu-close-btn">
-                        <i class="uil uil-times"></i>
+                        <i id="close-sidebar" class="uil uil-times"></i>
                     </button>
                 </div>
-                        <ul class="sidebar-menu-category-list">
-             <li class="sidebar-menu-category">
+                        <ul class="sidebar-menu-category-list ">
+             <li class="sidebar-menu-category ">
                                 <button class="sidebar-accord-menu" id="data-accord-btn">
                                     <div class="menu-title-flex">
                                         <img src="assets/images/icons/dress.svg" style="width:30px ; height: 30px;" alt="clothes" class="menu-title">
@@ -801,44 +801,44 @@
                                         <i id="plus" class="uil uil-plus"></i>
                                     </div>
                                 </button>
-                                <ul class="sidebar-submenu-category-list">
-                                    <li class="sidebar-submeu-category">
+                                <ul class="sidebar-submenu-category-list ">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Shirt</p>
                                             <data value="300" class="stock" title="available stock">300</data>
                                         </a>
                                     </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Shorts & Jeans</p>
                                             <data value="60" class="stock" title="available stock">60</data>
                                         </a>
                                     </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Jacket</p>
                                             <data value="20" class="stock" title="available stock">20</data>
                                         </a>
                                     </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Skirts</p>
                                             <data value="59" class="stock" title="available stock">59</data>
                                         </a>
                                     </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Dress & Frock</p>
                                             <data value="40" class="stock" title="available stock">40</data>
                                         </a>
                                     </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Tops</p>
                                             <data value="27" class="stock" title="available stock">27</data>
                                         </a>
                                     </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Sports </p>
                                             <data value="55" class="stock" title="available stock">55</data>
@@ -857,42 +857,44 @@
                                         <i id="plus" class="uil uil-plus"></i>
                                     </div>
                                 </button>
-                                <li class="sidebar-submeu-category">
+                                <ul class="sidebar-submenu-category-list">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Casual</p>
                                         <data value="34" class="stock" title="available stock">34</data>
                                     </a>
                                 </li>
-                                <li class="sidebar-submeu-category">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
-                                        <p class="product-name">Belts</p>
+                                        <p class="product-name">Socks</p>
                                         <data value="88" class="stock" title="available stock">88</data>
                                     </a>
                                 </li>
-                                <li class="sidebar-submeu-category">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Formal</p>
                                         <data value="19" class="stock" title="available stock">19</data>
                                     </a>
                                 </li>
-                                <li class="sidebar-submeu-category">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Safety Shoes</p>
                                         <data value="70" class="stock" title="available stock">70</data>
                                     </a>
                                 </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Sneaker </p>
                                             <data value="55" class="stock" title="available stock">55</data>
                                         </a>
                                     </li>
-                                    <li class="sidebar-submeu-category">
+                                    <li class="sidebar-submenu-category">
                                         <a href="#" class="sidebar-submenu-title">
                                             <p class="product-name">Sandals </p>
                                             <data value="55" class="stock" title="available stock">55</data>
                                         </a>
                                     </li>
+                                </ul>
                  </li>
 
              <li class="sidebar-menu-category">
@@ -905,37 +907,38 @@
                                         <i id="plus" class="uil uil-plus"></i>
                                     </div>
                                 </button>
-                                <li class="sidebar-submeu-category">
+                                <ul class="sidebar-submenu-category-list">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Earrings</p>
                                         <data value="44" class="stock" title="available stock">44</data>
                                     </a>
                                 </li>
-                                <li class="sidebar-submeu-category">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Rings</p>
                                         <data value="65" class="stock" title="available stock">65</data>
                                     </a>
                                 </li>
-                                <li class="sidebar-submeu-category">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Necklace</p>
                                         <data value="71" class="stock" title="available stock">71</data>
                                     </a>
                                 </li>
-                                <li class="sidebar-submeu-category">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Bracelets</p>
                                         <data value="22" class="stock" title="available stock">22</data>
                                     </a>
                                 </li>
-                                <li class="sidebar-submeu-category">
+                                <li class="sidebar-submenu-category">
                                     <a href="#" class="sidebar-submenu-title">
                                         <p class="product-name">Hairpins</p>
                                         <data value="57" class="stock" title="available stock">57</data>
                                     </a>
                                 </li>
-
+                                </ul>
                 </li>
 
               <li class="sidebar-menu-category">
@@ -948,30 +951,32 @@
                                                 <i id="plus" class="uil uil-plus"></i>
                                             </div>
                                         </button>
-                                        <li class="sidebar-submeu-category">
+                                        <ul class="sidebar-submenu-category-list">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Deodorant</p>
                                                 <data value="34" class="stock" title="available stock">34</data>
                                             </a>
                                         </li>
-                                        <li class="sidebar-submeu-category">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Body spray</p>
                                                 <data value="56" class="stock" title="available stock">56</data>
                                             </a>
                                         </li>
-                                        <li class="sidebar-submeu-category">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Clothes spray</p>
                                                 <data value="32" class="stock" title="available stock">32</data>
                                             </a>
                                         </li>
-                                        <li class="sidebar-submeu-category">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Air Freshener</p>
                                                 <data value="17" class="stock" title="available stock">17</data>
                                             </a>
                                         </li>
+                                        </ul>
                                     </li>
 
                 <li class="sidebar-menu-category">
@@ -984,36 +989,38 @@
                                                 <i id="plus" class="uil uil-plus"></i>
                                             </div>
                                         </button>
-                                        <li class="sidebar-submeu-category">
+                                        <ul class="sidebar-submenu-category-list">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Shampoo</p>
                                                 <data value="72" class="stock" title="available stock">72</data>
                                             </a>
                                         </li>
-                                        <li class="sidebar-submeu-category">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Body Lotion</p>
                                                 <data value="43" class="stock" title="available stock">43</data>
                                             </a>
                                         </li>
-                                        <li class="sidebar-submeu-category">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Sunscreen</p>
                                                 <data value="50" class="stock" title="available stock">50</data>
                                             </a>
                                         </li>
-                                        <li class="sidebar-submeu-category">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Body Wash</p>
                                                 <data value="66" class="stock" title="available stock">66</data>
                                             </a>
                                         </li>
-                                        <li class="sidebar-submeu-category">
+                                        <li class="sidebar-submenu-category">
                                             <a href="#" class="sidebar-submenu-title">
                                                 <p class="product-name">Hair-Care Products</p>
                                                 <data value="34" class="stock" title="available stock">34</data>
                                             </a>
                                         </li>
+                                        </ul>
                                     </li>
 
                  <li class="sidebar-menu-category">
@@ -1026,30 +1033,32 @@
                                                         <i id="plus" class="uil uil-plus"></i>
                                                     </div>
                                                 </button>
-                                                <li class="sidebar-submeu-category">
+                                                <ul class="sidebar-submenu-category-list">
+                                                <li class="sidebar-submenu-category">
                                                     <a href="#" class="sidebar-submenu-title">
                                                         <p class="product-name">Sunglasses</p>
                                                         <data value="72" class="stock" title="available stock">72</data>
                                                     </a>
                                                 </li>
-                                                <li class="sidebar-submeu-category">
+                                                <li class="sidebar-submenu-category">
                                                     <a href="#" class="sidebar-submenu-title">
                                                         <p class="product-name">fashion glasses</p>
                                                         <data value="43" class="stock" title="available stock">43</data>
                                                     </a>
                                                 </li>
-                                                <li class="sidebar-submeu-category">
+                                                <li class="sidebar-submenu-category">
                                                     <a href="#" class="sidebar-submenu-title">
                                                         <p class="product-name">Reading glasses</p>
                                                         <data value="50" class="stock" title="available stock">50</data>
                                                     </a>
                                                 </li>
-                                                <li class="sidebar-submeu-category">
+                                                <li class="sidebar-submenu-category">
                                                     <a href="#" class="sidebar-submenu-title">
                                                         <p class="product-name">Photochromic Lenses</p>
                                                         <data value="66" class="stock" title="available stock">66</data>
                                                     </a>
                                                 </li>
+                                                </ul>
                                             </li>
                                             
                    <li class="sidebar-menu-category">
@@ -1062,44 +1071,147 @@
                                                                 <i id="plus" class="uil uil-plus"></i>
                                                             </div>
                                                         </button>
-                                                        <li class="sidebar-submeu-category">
+                                                        <ul class="sidebar-submenu-category-list">
+                                                        <li class="sidebar-submenu-category">
                                                             <a href="#" class="sidebar-submenu-title">
                                                                 <p class="product-name">Shopping Bag</p>
                                                                 <data value="72" class="stock" title="available stock">72</data>
                                                             </a>
                                                         </li>
-                                                        <li class="sidebar-submeu-category">
+                                                        <li class="sidebar-submenu-category">
                                                             <a href="#" class="sidebar-submenu-title">
                                                                 <p class="product-name"> School Backpack</p>
                                                                 <data value="43" class="stock" title="available stock">43</data>
                                                             </a>
                                                         </li>
-                                                        <li class="sidebar-submeu-category">
+                                                        <li class="sidebar-submenu-category">
                                                             <a href="#" class="sidebar-submenu-title">
                                                                 <p class="product-name">Laptop Bags</p>
                                                                 <data value="50" class="stock" title="available stock">50</data>
                                                             </a>
                                                         </li>
-                                                        <li class="sidebar-submeu-category">
+                                                        <li class="sidebar-submenu-category">
                                                             <a href="#" class="sidebar-submenu-title">
                                                                 <p class="product-name">Gym Backpack </p>
                                                                 <data value="66" class="stock" title="available stock">66</data>
                                                             </a>
                                                         </li>
-                                                        <li class="sidebar-submeu-category">
+                                                        <li class="sidebar-submenu-category">
                                                             <a href="#" class="sidebar-submenu-title">
                                                                 <p class="product-name">Purse </p>
                                                                 <data value="34" class="stock" title="available stock">34</data>
                                                             </a>
                                                         </li>
-                                                        <li class="sidebar-submeu-category">
+                                                        <li class="sidebar-submenu-category">
                                                             <a href="#" class="sidebar-submenu-title">
                                                                 <p class="product-name">Wallet </p>
                                                                 <data value="34" class="stock" title="available stock">34</data>
                                                             </a>
                                                         </li>
-                                            </li>
+                                                        </ul>
+                   </li>
                 
+            </div>
+            <div class="product-showcase">
+                <h3 class="showcase-heading">
+                    best sellers
+                </h3>
+                <div class="showcase-wrapper">
+                    <div class="showcase-container">
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img src="assets/images/products/3.jpg" style="width: 75px;height:75px;" alt="girl's clothes" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        Girls T-shirts
+                                    </h4>
+                                </a>
+                                <div class="showcase-rating">
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star" ></i>
+                                </div>
+                                <div class="price-box">
+                                    <del>$12.00</del>
+                                    <p class="price">$9.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img src="assets/images/products/1.jpg" style="width: 75px;height:75px;" alt="baby fabric shoes" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        baby fabrics shoes
+                                    </h4>
+                                </a>
+                                <div class="showcase-rating">
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt" ></i>
+                                </div>
+                                <div class="price-box">
+                                    <del>$5.00</del>
+                                    <p class="price">$3.90</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img src="assets/images/products/4.jpg" style="width: 75px;height:75px;" alt="woolen hat for men" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        Woolen hat for men
+                                    </h4>
+                                </a>
+                                <div class="showcase-rating">
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt" ></i>
+                                </div>
+                                <div class="price-box">
+                                    <del>$9.00</del>
+                                    <p class="price">$7.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img src="assets/images/products/2.jpg" style="width: 75px;height:75px;" alt="Men's clothes" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        Men's hoodies & T-shirts
+                                    </h4>
+                                </a>
+                                <div class="showcase-rating">
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star" ></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt" ></i>
+                                </div>
+                                <div class="price-box">
+                                    <del>$17.00</del>
+                                    <p class="price">$15.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
