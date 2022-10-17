@@ -3,11 +3,16 @@
 var loader = document.getElementById("preloader");
 window.addEventListener("load", () => {
 	loader.style.display= "none";
+   // modalShow.classList.add("show-modal")
+
 });
 const modalShow = document.getElementById("modal");
 const modalCloseBtn = document.getElementById('times');
 const openModal =document.getElementById("open-modal");
-
+// modal
+modalCloseBtn.addEventListener('click', () => {
+modalShow.classList.remove("show-modal")
+});
 
 
 // notification popup
