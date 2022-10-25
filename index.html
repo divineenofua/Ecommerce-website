@@ -31,25 +31,25 @@
         </div>
         <div class="modal-content">
             <p>Sign up to get  easy access latest products and discount update</p>
-            <form action="" class="modal-form">
+            <form action="https://formspree.io/f/xdobqlay" method="POST" class="modal-form">
                 <div>
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter Name ">
+                    <input type="text" id="name" placeholder="Enter Name " required>
                 </div>
                 <div>
                     <label for="Email">Email</label>
-                    <input type="text" id="Email" placeholder="Enter Email ">
+                    <input type="text" id="Email" placeholder="Enter Email " required>
                 </div>
                 <div>
                     <label for="Password">Password</label>
-                    <input type="text" id="Password" placeholder="Enter Password ">
+                    <input type="number" id="Password" placeholder="Enter Password " required>
                 </div>
                 <div>
                     <label for="Password2">Password2</label>
-                    <input type="text" id="Password2" placeholder="Confirm Password ">
+                    <input type="number" id="Password2" placeholder="Confirm Password " required>
                 </div>
                 <div class="form-btn">
-                <button id="close-btn" class="btn">Submit</button>
+                <button type="submit" id="close-btn" class="btn">Submit</button>
             </div>
             </form>
         </div>
@@ -168,7 +168,7 @@
                 <span class="count">0</span>
             </button>
             <button class="action-btn"><a href="#" class="uil uil-shopping-cart"></a> 
-                <span class="count">0</span>
+                <span class="count count-cart">0</span>
             </button>
         </div>
     </div>

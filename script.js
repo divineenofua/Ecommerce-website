@@ -3,7 +3,7 @@
 var loader = document.getElementById("preloader");
 window.addEventListener("load", () => {
 	loader.style.display= "none";
-   // modalShow.classList.add("show-modal")
+   modalShow.classList.add("show-modal")
 
 });
 const modalShow = document.getElementById("modal");
@@ -86,3 +86,23 @@ sideMenuBar.forEach(item => {
 
    })
 })
+
+// add to cart
+const addCart = document.querySelectorAll(".uil-shopping-cart");
+const spanCount = document.querySelector(".count-cart");
+
+// addCart.forEach(cart => {
+   addCart.addEventListener('click', () =>{
+      
+      updateSpan(++spanCounted);
+      spanCount.innerHTMl= '60';
+
+   })
+// })
+let spanCounted  = 0;
+function updateSpan(span_count){
+   spanCounted = span_count;
+   spanCount.innerHTML= span_count;
+} 
+
+
