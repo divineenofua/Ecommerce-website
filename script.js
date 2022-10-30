@@ -3,7 +3,10 @@
 var loader = document.getElementById("preloader");
 window.addEventListener("load", () => {
 	loader.style.display= "none";
+   setTimeout(() => {
    modalShow.classList.add("show-modal")
+}, 7000);
+
 
 });
 const modalShow = document.getElementById("modal");
@@ -28,11 +31,16 @@ const showList =document.querySelectorAll("#plus");
 const HideList =document.getElementById("minus");
 const accordMenu = document.getElementById('accord-menu');
 const closeMenu = document.getElementById("close");
+const closeMenu1 = document.getElementById("close1");
 const accordBtn = document.getElementById("data-accord-btn");
 // close nav
 const mobileMenu = document.getElementById("data-mobile-menu");
 closeMenu.addEventListener("click", () => {
 	mobileMenu.classList.remove("active");
+});
+// close setting
+closeMenu1.addEventListener("click", () => {
+	mobileSettingMenu.classList.remove("active");
 });
 // show & hide menu list
 const menuShowList = document.querySelectorAll('.show-menu');
@@ -56,6 +64,12 @@ menuShowList.forEach(faq => {
 const mobileMenuOpen = document.getElementById("mobile-menu-open");
 mobileMenuOpen.addEventListener("click", () => {
 	mobileMenu.classList.add("active");
+});
+// setting bar
+const mobileSettingMenu = document.getElementById("data-mobile-setting");
+const mobileSettingOpen = document.getElementById("mobile-setting-open");
+mobileSettingOpen.addEventListener("click", () => {
+	mobileSettingMenu.classList.add("active");
 });
 
 
@@ -91,18 +105,32 @@ sideMenuBar.forEach(item => {
 const addCart = document.querySelectorAll(".uil-shopping-cart");
 const spanCount = document.querySelector(".count-cart");
 
-// addCart.forEach(cart => {
-   addCart.addEventListener('click', () =>{
-      
-      updateSpan(++spanCounted);
-      spanCount.innerHTMl= '60';
 
-   })
-// })
 let spanCounted  = 0;
 function updateSpan(span_count){
    spanCounted = span_count;
    spanCount.innerHTML= span_count;
 } 
 
+
+const body = document.getElementById("body");
+
+
+// toggle mode
+ const toggleMode = document.querySelector('.fa-toggle-off');
+ const toggle = document.querySelector('.fa-toggle-on');
+ toggleMode.addEventListener("click", () => {
+   toggleMode.style.display= "none";
+   toggle.style.display = "block";
+   body.style.background = "rgba(0,0,0,0.9)";
+   body.style.color = "white";
+ });
+ toggle.addEventListener("click", () => {
+   toggleMode.style.display= "block";
+   toggle.style.display = "none";
+   body.style.background = "white";
+
+
+ });
+ 
 

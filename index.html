@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="style.css">
     <title>E-Commerce Web</title>
 </head>
-<body>
+<body id="body" >
 <div id="preloader"></div>
+
 
 
 
@@ -30,7 +31,8 @@
             <h3>Sign Up</h3>
         </div>
         <div class="modal-content">
-            <p>Sign up to get  easy access latest products and discount update</p>
+            <p>Sign up to get  easy access latest products and discount update</p><br>
+            <a href="login.html">Login If You have an account</a>
             <form action="https://formspree.io/f/xdobqlay" method="POST" class="modal-form">
                 <div>
                     <label for="name">Name</label>
@@ -155,14 +157,16 @@
 <div class="header-main">
     <div class="container">
         <a href="#" class="header-logo">
-            <img src="assets/images/logo/logo.svg" height="36" width="120" alt="Dee's logo">
+            <img src="assets/deelogocode.png" style="height:100% ; width:100%;" alt="Dee's logo">
         </a>
         <div class="input">
-            <input type="text" placeholder="Enter your product name..">
+            <input type="text" id="search" placeholder="Enter your product name..">
             <i class="fas fa-search" id="search-icon"></i>
         </div>
         <div class="icons-link">
+
             <button class="action-btn"><a href="#" class="fas fa-person"></a>
+
             </button>
             <button class="action-btn"><a href="#" class="uil uil-heart"></a>
                 <span class="count">0</span>
@@ -359,22 +363,24 @@
     <button class="action-btn" id="mobile-menu-open">
         <i class="uil uil-bars"></i>
     </button>
-    <button class="action-btn">
-        <i class="uil uil-shopping-cart"></i>
+    <button class="action-btn" id="mobile-setting-open">
+       <i class="uil uil-setting"></i>
 
-        <span class="count">0</span>
+
     </button>
     <button class="action-btn">
-        <i class="uil uil-home"></i>
+        <a href="index.html">
+        <i class="uil uil-home"></i></a>
     </button>
     <button class="action-btn">
-        <i class="uil uil-heart"></i>
+        <i class="fas fa-toggle-off"></i>
+        <i class="fas fa-toggle-on"></i>
 
-        <span class="count">0</span>
     </button>
     <button class="action-btn">
         <i id="grid" class="uil uil-grid"></i>
     </button>
+    
 </div>
 <nav class="mobile-nav-menu has-scrollbar" id="data-mobile-menu">
     <div class="menu-top">
@@ -595,6 +601,260 @@
         </ul>
     </div>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="mobile-nav-setting has-scrollbar" id="data-mobile-setting">
+    <div class="menu-top">
+        <h2 class="menu-title">Setting</h2>
+        <button class="menu-close-btn" id="data-menu-close-btn">
+            <i id="close1" class="uil uil-times"></i>
+        </button>
+    </div>
+
+    <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+            <a href="" class="menu-title">My  Setting</a>
+            <i class="uil uil-setting"></i>
+        </li>
+
+        <li class="menu-category show-menu" >
+            <button class="accord-menu" id="accord-menu">
+                <i class="uil uil-setting icon"></i>
+                <p class="menu-title">Account setting</p>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
+                </div>
+            </button>
+            <ul class="submenu-category-list" id="data-accord">
+                <li class="submenu-category">
+                    <a href="signup.html" class="submenu-title">Sign up</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="login.html" class="submenu-title">Login</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="index.html" class="submenu-title">Visit Site</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Email Verificaton</a>
+                </li>
+
+            </ul>
+        </li>
+
+
+
+
+        <li class="menu-category show-menu" >
+            <button class="accord-menu" id="accord-menu">
+                <i class="fas fa-user-lock icon"></i>
+                <p class="menu-title">profile setting</p>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
+                </div>
+            </button>
+            <ul class="submenu-category-list" id="data-accord">
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Password setting</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Notification setting</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Referral Setting</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Get Updates</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="menu-category show-menu">
+            <button class="accord-menu" id="accord-menu">
+                <i class="fas fa-user-check icon"></i>
+                <p class="menu-title">Self Help</p>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
+                </div>
+            </button>
+            <ul class="submenu-category-list" id="data-accord">
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Fix an Account Issue</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Fix a Transaction</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Redeem a Gift card</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Lay complaints</a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="menu-category show-menu">
+            <button class="accord-menu" id="accord-menu">
+                <i class="fas fa-phone icon"></i>
+                <p class="menu-title">Contact us</p>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
+                </div>
+            </button>
+            <ul class="submenu-category-list" id="data-accord">
+                <li class="submenu-category">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#"><i class="fab fa-Phone"></i></a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="menu-category show-menu">
+            <button class="accord-menu" id="accord-menu">
+                <i class="fa fa-tablet icon"></i>
+                <p class="menu-title">Help Center</p>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
+                </div>
+            </button>
+            <ul class="submenu-category-list" id="data-accord">
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Place order</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Track order</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Order Cancellation</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Returns & Refunds</a>
+                </li>
+
+            </ul>
+        </li>
+       
+        <li class="menu-category show-menu">
+            <button class="accord-menu" id="accord-menu">
+                <i class="fas fa-book-open icon"></i>
+                <p class="menu-title">Know Us more</p>
+                <div class="list-icon">
+                    <i id="plus" class="uil uil-plus"></i>
+                </div>
+            </button>
+            <ul class="submenu-category-list" id="data-accord">
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Terms & Conditions</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Policy</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Call us</a>
+                </li>
+                <li class="submenu-category">
+                    <a href="#" class="submenu-title">Transcations</a>
+                </li>
+
+            </ul>
+        </li>
+       
+    </ul>
+    <div class="menu-bottom">
+        <ul class="menu-category-list">
+            <li class="menu-category show-menu">
+                <button class="accord-menu" id="data-accord-btn">
+                    <i class="fa fa-language icon"></i>
+                    <p class="menu-title">Language</p>
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <ul class="submenu-category-list" id="data-accord">
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">English</a>
+                    </li>
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Francais</a>
+                    </li>
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Espagnol</a>
+                    </li>
+                </ul>
+            </li>
+                <li class="menu-category show-menu">
+                    <button class="accord-menu" id="data-accord-btn">
+                        <i class="fa fa-dollar icon"></i>
+                        <p class="menu-title">Currency</p>
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                <ul class="submenu-category-list" id="data-accord">
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">USD &dollar;</a>
+                    </li>
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">EUR &euro;</a>
+                    </li>
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">NGN</a>
+                    </li>
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">AUD</a>
+                    </li>
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">MYR</a>
+                    </li>
+                </ul>
+                
+            </li>
+        </ul>
+        <ul class="menu-social-container">
+            <li class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+                <li class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+                <li class="social-links">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
 </header>
 
 <main>
@@ -2258,7 +2518,7 @@
 
 
     <!-- services -->
-    <div class="services">
+    <div class="services text">
         <h2 class="title">Our  Services</h2>
         <div class="service-container">
             <a href="#" class="service-item">
