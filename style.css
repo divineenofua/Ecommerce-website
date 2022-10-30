@@ -1773,6 +1773,7 @@ footer{
         margin-top: 0;
         min-height: calc(100% - 345px);
     }
+ 
 
 /* FOOTER */
 .footer-nav .container{
@@ -2204,11 +2205,14 @@ footer{
 
 
 
-/* @media (max-width:900px) {
-    .container{
-        width: var(--container-width-md);
+  @media (max-width:500px) {
+    /* .countdown-content{
+        font-size: 15px;
+        padding: 0px;
+    } */
+    .has-scrollbar::-webkit-scrollbar-thumb{
+        background: hsl(0, 30%, 96%);
+        border: 1px solid var(--white);
+        border-radius: 20px;
     }
-    .container .icons{
-        display: none;
-    }
-} */
+}  
