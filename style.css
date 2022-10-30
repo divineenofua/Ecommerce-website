@@ -2206,16 +2206,24 @@ footer{
 
 
   @media (max-width:500px) {
-    /* .countdown-content{
+    .countdown-content{
         font-size: 15px;
-        padding: 0px;
-    } */
+        padding: 5px;
+    }
     .has-scrollbar::-webkit-scrollbar-thumb{
         background: hsl(0, 30%, 96%);
         border: 1px solid var(--white);
         border-radius: 20px;
     }
-    .price-box .price{
+    .price-box .price, del{
         font-size: 12px;
     }
+    .add-cart-btn{
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 14px;
+     }
+     .product-feature .showcase-descript{
+        font-size: 15px;
+     }
 }  
