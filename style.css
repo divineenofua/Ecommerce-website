@@ -2215,4 +2215,7 @@ footer{
         border: 1px solid var(--white);
         border-radius: 20px;
     }
+    .price-box .price{
+        font-size: 12px;
+    }
 }  
